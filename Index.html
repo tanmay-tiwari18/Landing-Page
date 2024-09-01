@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        brainyBee
+        <img
+          id="logoimg"
+          src="http://www.clipartbest.com/cliparts/Kin/a6d/Kina6d5RT.png"
+          alt="logoimg"
+        />
+      </div>
+      <div class="menuButtons">
+        <a href="/#" class="navButton Nav1" onclick="AssignActive('Nav1')"
+          >LEARN</a
+        >
+        <a href="/#" class="navButton Nav2" onclick="AssignActive('Nav2')"
+          >PRACTICE</a
+        >
+        <a href="/#" class="navButton Nav3" onclick="AssignActive('Nav3')"
+          >LEADERBOARD</a
+        >
+        <a href="/#" class="navButton Nav4" onclick="AssignActive('Nav4')"
+          >PROFILE</a
+        >
+        <a
+          href="/#"
+          class="navButton Nav5"
+          id=" "
+          onclick="AssignActive('Nav5')"
+          >MORE
+        </a>
+      </div>
+      <button class="toggle" onclick="togglenav()">togglebutton</button>
+    </nav>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Empower Your Learning Journey</h2>
+        <p>
+          Explore a wide range of courses and resources to enhance your skills
+          and knowledge. Join our community of learners and take your education
+          to the next level.
+        </p>
+        <a href="#" class="cta-btn">GET STARTED</a>
+        <article class="feturedCourseSection">
+          <img
+            class="courseIcon"
+            id="C-icon"
+            src="./Assets/icons8-c-26.png"
+            alt="c"
+          />
+          <img
+            class="courseIcon"
+            id="cpp-icon"
+            src="./Assets/icons8-c-60.png"
+            alt="c++"
+          ></img>
+          <img
+            class="courseIcon"
+            id="java-icon"
+            src="./Assets/icons8-java-50.png"
+            alt="java"
+          />
+          <img
+            class="courseIcon"
+            id="js-icon"
+            src="./Assets/icons8-javascript-50.png"
+            alt="js"
+          />
+          <img
+            class="courseIcon"
+            id="python-icon"
+            src="./Assets/icons8-python-50.png"
+            alt="python"
+          />
+          <img
+            class="courseIcon"
+            id="html-icon"
+            src="./Assets/icons8-html-48.png"
+            alt="html"
+          />
+          <img
+            class="courseIcon"
+            id="react-icon"
+            src="./Assets/icons8-react-48.png"
+            alt="react"
+          />
+          <img
+            class="courseIcon"
+            id="node-icon"
+            src="./Assets/icons8-nodejs-48.png"
+            alt="node"
+          />
+          <img
+            class="courseIcon"
+            id="springboot-icon"
+            src="./Assets/icons8-spring-boot-48.png"
+            alt="springboot"
+          />
+        </article>
+      </div>
+      <img class="heroImg" src="./Assets/headimg.svg" alt="img" />
+    </section>
+    <section class="decorlist">
+      <div class="decorOne">.</div><div class="decorTwo"></div><div class="decorThree"></div><div class="decorFour"></div><div class="decorFive"></div><div class="decorSix"></div><div class="decorSeven"></div><div class="decorEigth"></div>
+    </section>
+    <section class="business-empower-section">
+  <div class="content">
+    <h2>Empower your future with top tech and coding skills.</h2>
+    <p>
+      Join 10,000+ students and leading engineering colleges who use our platform to enhance their tech skills and master in-demand coding languages.
+    </p>
+    <a href="#" class="cta-btn">For Students</a>
+  </div>
+  <div class="trusted-companies">
+    <p class="trusted-text">LOVED BY STUDENTS AT TOP ENGINEERING COLLEGES</p>
+    <div class="company-logos">
+      <img src="https://pngimg.com/uploads/google/google_PNG19624.png" alt="Google" />
+      <img src="https://www.gloo.com.my/image/catalog/08NewHome/Microsoft-Logo-(Black).png" alt="Microsoft" />
+      <img src="https://purepng.com/public/uploads/large/amazon-logo-s3f.png" alt="Amazon" />
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-1-logo-png-transparent.png" alt="Facebook" />
+      <img src="https://logosmarcas.net/wp-content/uploads/2020/09/IBM-Logo-1956-1967.png" alt="IBM" />
+      <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-transparent-png-svg-vector-25.png" alt="Apple" />
+    </div>
+  </div>
+</section>
+<section id="about-platform" class="platform-info">
+  <div class="platform-content">
+    <h2>What is Brainy Bee?</h2>
+    <p>
+      At Brainy B, we're revolutionizing the way you learn and grow. Our platform is designed to make education more accessible, engaging, and effective than ever before. Whether you're a student aiming to enhance your skills or a professional seeking to upskill, Brainy B has something for everyone.
+    </p>
+    <p>
+      Join us today and be a part of the educational revolution. Discover your potential with Brainy B!
+    </p>
+    <button id="platform-button">Start learning For Free</button>
+  </div>
+</section>
+
+<section class="courses-section">
+  <h2 class="section-title">Explore Our Courses</h2>
+  <div class="courses-container">
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/full-stack-icon.png" alt="Full Stack Development Icon" />
+      </div>
+      <h3>Full Stack Development</h3>
+      <p>Learn full stack development, covering both frontend and backend technologies.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/android-icon.png" alt="Android Development Icon" />
+      </div>
+      <h3>Android Development</h3>
+      <p>Build powerful Android apps with the latest tools and techniques.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/ios-icon.png" alt="iOS Development Icon" />
+      </div>
+      <h3>iOS Development</h3>
+      <p>Develop iOS apps using Swift and Xcode, with practical projects.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/game-dev-icon.png" alt="Game Development Icon" />
+      </div>
+      <h3>Game Development</h3>
+      <p>Create engaging games with industry-standard tools and techniques.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/python-icon.png" alt="Python Icon" />
+      </div>
+      <h3>Python Programming</h3>
+      <p>Learn Python basics and advanced concepts for various applications.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/machine-learning-icon.png" alt="Machine Learning Icon" />
+      </div>
+      <h3>Machine Learning</h3>
+      <p>Understand machine learning algorithms and build intelligent systems.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/data-science-icon.png" alt="Data Science Icon" />
+      </div>
+      <h3>Data Science</h3>
+      <p>Analyze and interpret complex data using data science methodologies.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/ai-icon.png" alt="Artificial Intelligence Icon" />
+      </div>
+      <h3>Artificial Intelligence</h3>
+      <p>Create smart systems and applications with AI concepts and techniques.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/cybersecurity-icon.png" alt="Cybersecurity Icon" />
+      </div>
+      <h3>Cybersecurity</h3>
+      <p>Protect systems and data with essential cybersecurity practices.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon">
+        <img src="path/to/cloud-computing-icon.png" alt="Cloud Computing Icon" />
+      </div>
+      <h3>Cloud Computing</h3>
+      <p>Manage and deploy scalable applications using cloud platforms.</p>
+      <a href="#" class="course-btn">Explore</a>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <h2 class="features-title">Why Choose Us?</h2>
+  <div class="features-container">
+    <div class="feature">
+      <div class="feature-icon">
+        <img src="path/to/expert-instructors-icon.png" alt="Expert Instructors Icon" />
+      </div>
+      <h3>Expert Instructors</h3>
+      <p>Learn from industry professionals who bring real-world experience to the classroom.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">
+        <img src="path/to/flexible-learning-icon.png" alt="Flexible Learning Icon" />
+      </div>
+      <h3>Flexible Learning</h3>
+      <p>Access courses anytime, anywhere at your own pace.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">
+        <img src="path/to/interactive-learning-icon.png" alt="Interactive Learning Icon" />
+      </div>
+      <h3>Interactive Learning</h3>
+      <p>Engage with hands-on projects, quizzes, and peer discussions.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2024 EduLearn. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#" class="social-icon" aria-label="Facebook">
+        <img src="path/to/facebook-icon.png" alt="Facebook Icon">
+      </a>
+      <a href="#" class="social-icon" aria-label="Twitter">
+        <img src="path/to/twitter-icon.png" alt="Twitter Icon">
+      </a>
+      <a href="#" class="social-icon" aria-label="LinkedIn">
+        <img src="path/to/linkedin-icon.png" alt="LinkedIn Icon">
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
